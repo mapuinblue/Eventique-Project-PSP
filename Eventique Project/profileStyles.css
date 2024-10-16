@@ -1,0 +1,169 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-color: #3f3f3f;
+}
+
+.side-nav {
+    width: 110px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px 15px;
+    background: rgba(255, 255, 255, 0.918);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: width 0.5s;
+    z-index: 10;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+    font-size: 12px;
+    padding: 3px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+    overflow: hidden;
+}
+
+.user div {
+    display: none;
+}
+
+.user h2 {
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-left: 5px;
+}
+
+
+
+.user p {
+    margin-left: 5px;
+    font-size: 10px;
+
+}
+
+.user-img {
+    width: 50px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+div i.uil-favorite {
+    font-size: 25px;
+    margin-left: 10px;
+    display: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0 15px;
+    margin-top: 20px;
+}
+
+ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+ul li i{
+    display: block;
+    font-size: 24px;
+    margin-right: 0px;
+}
+
+ul li p {
+    white-space: nowrap;
+    font-size: 15px;
+    display: none;
+}
+
+.side-nav:hover {
+    width: 250px;
+}
+
+.side-nav:hover .user div {
+    display: block;
+}
+
+.side-nav:hover .user {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.side-nav:hover .uil.uil-favorite {
+    display: block;
+    margin: 0;
+}
+
+.side-nav:hover .user-img {
+    margin: 0;
+}
+
+.side-nav:hover ul li p {
+    display: block;
+}
+
+.side-nav:hover ul li i {
+    margin-right: 10px;
+}
+
+.side-nav:hover ul li {
+    justify-content: flex-start;
+}
+
+.containerClock {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: bold 12px Arial, Helvetica, sans-serif;
+    position: fixed;
+    bottom: 130px;
+    left: 150px;
+    z-index: 5;
+}
+
+.clock {
+    border: 1px solid #606060;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #222222;
+}
+
+#Date {
+    font-size: 20px !important;
+    text-align: center;
+}
+
+.clock ul {
+    list-style: none;
+    display: flex;
+    font-size: 90px;
+    gap: 15px;
+}
